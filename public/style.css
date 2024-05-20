@@ -1,0 +1,112 @@
+span[data-task-id] {
+	cursor: pointer;
+	text-decoration: none;
+}
+
+span[data-task-id].task-status-inactive {
+    text-decoration: line-through;
+}
+
+span[data-task-id].task-disabled {
+    color: gainsboro;
+}
+
+
+/* πεδιο tasks ---------------------------------*/
+/* General form styling */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+/* Row styling */
+.row {
+    margin-bottom: 15px;
+}
+
+/* Input field styling */
+.input-lg {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Button styling */
+button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Task list styling */
+.list-group {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #fff;
+}
+
+.list-group-item a {
+    text-decoration: none;
+    color: black;
+}
+
+.list-group-item a:hover {
+    text-decoration: underline;
+}
+
+/* Remove button styling */
+.list-group-item a[style*="color: red;"] {
+    color: red;
+    margin-left: auto;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.list-group-item a[style*="color: red;"]:hover {
+    color: darkred;
+}
+
+/* Completed task styling */
+.list-group-item a[style*="text-decoration: line-through;"] {
+    color: grey;
+}
+
+/* Box for task list */
+.list-group-container {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    margin-top: 20px;
+}
+
+/* τέλος tasks----------------------------------------------------*/
+
+.col mt-3 text-right{
+    color: aqua;
+}

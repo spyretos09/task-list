@@ -1,0 +1,28 @@
+<form method="GET" action="/tasks/add">
+    <div class="row">
+        <div class="col">
+            <label for="item">Προσθήκη εργασίας:</label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-9">
+            <input type="text" name="taskName" id="item" class="input-lg">
+        </div>
+        <div class="col">
+            <button type="submit">Νέα εργασία</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col mt-3 list-group-container">
+            <ul class="list-group">
+                {{#each tasks}}
+                    <li class="list-group-item">
+                        <a href="/tasks/toggle/{{id}}" {{#if status}} style="text-decoration: line-through;" {{/if}}>{{task}}</a><tr></tr>
+                        <span>{{created_at}}</span>
+                        <a href="/tasks/remove/{{id}}" style="color: red;">Διαγραφή</a>
+                    </li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+</form>
